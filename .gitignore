@@ -1,0 +1,8 @@
+**/node_modules/**
+build
+temp/*
+src/templates/apf-*
+.env
+/dist
+/.vscode
+apf-*
