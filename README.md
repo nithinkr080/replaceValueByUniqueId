@@ -11,19 +11,33 @@ This function can be directly integrated into your TypeScript or JavaScript proj
 ## Usage
 
 ```typescript
-import { replaceByUniqueId } from './replaceByUniqueId';
+import { replaceValueByUniqueId } from 'replacevaluebyuniqueid';
 
 // Example usage:
 const originalObject = {
-  /* Your original object */
+  nested: [
+    {
+      deepNested: [
+        {
+          id: 2,
+          value: 'orginal',
+        },
+      ],
+    },
+  ],
 };
+
 const replacementObject = {
-  /* Object to replace matching objects */
+    id: 2,
+    value: "changed'
 };
+
 const uniqueIdPropertyName = 'id'; // Optional, defaults to 'id'
 
-const result = replaceByUniqueId(originalObject, replacementObject, uniqueIdPropertyName);
-console.log(result);
+const result = replaceValueByUniqueId(originalObject, replacementObject, uniqueIdPropertyName);
+
+console.log(result);  // output { nested: [{ deepNested: [{id: 2, value: 'changed' }]}]};
+
 ```
 
 ## Parameters

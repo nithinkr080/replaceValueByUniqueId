@@ -1,4 +1,4 @@
-function replaceValueByUniqueId(
+export function replaceValueByUniqueId(
   originalObject: any,
   replacement: any,
   identifierProperty: string = 'id',
@@ -13,5 +13,3 @@ function replaceValueByUniqueId(
   }
   return originalObject;
 }
-
-export default replaceValueByUniqueId;

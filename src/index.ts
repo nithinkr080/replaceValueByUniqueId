@@ -1,1 +1,1 @@
-export { default as replaceValueByUniqueId } from './lib/replaceValueByUniqueId';
+export { replaceValueByUniqueId } from './lib/replaceValueByUniqueId';

@@ -1,8 +1,8 @@
 {
   "name": "replacevaluebyuniqueid",
-  "version": "1.0.1",
+  "version": "1.0.8",
   "description": "",
-  "main": "index.js",
+  "main": "dist/src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx tsc --build --watch",
@@ -10,9 +10,12 @@
     "prepublishOnly": "pnpm run build"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.11.30"
-  }
+  },
+  "author": "Nithin K R",
+  "files": [
+    "dist"
+  ]
 }
